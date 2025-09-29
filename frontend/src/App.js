@@ -8,7 +8,7 @@ function App() {
 
   const handleCheck = async () => {
     try {
-      const res = await axios.post("http://127.0.0.1:8000/api/check/", { text });
+      const res = await axios.post("https://web-app-98k6.onrender.com/api/check/", { text });
       setResult(res.data.marked);
     } catch (error) {
       console.error("API Error:", error);
